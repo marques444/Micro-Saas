@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyShare - Compartilhe seus Materiais de Estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StudyShare</h1>
+            <nav>
+                <a href="#upload-section">Upload de Material</a>
+                <a href="#materials-section">Materiais Compartilhados</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="upload-section" class="upload-section">
+        <div class="container">
+            <h2>Compartilhe seu Material de Estudo</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" accept=".pdf,.docx,.txt,.jpg,.png" required style="display: none;">
+                
+                <button type="button" id="customButton">Escolher Arquivo</button>
+                
+                <input type="text" id="titleInput" placeholder="Título do Material" required>
+                <textarea id="descriptionInput" placeholder="Descrição do Material" required></textarea>
+                <button type="submit">Enviar Material</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="materials-section" class="materials-section">
+        <div class="container">
+            <h2>Materiais Compartilhados</h2>
+            <div id="materialsList">
+                <!-- Lista de materiais vai ficar aqui -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StudyShare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
